@@ -59,6 +59,22 @@ After finishing, the files will be stored in the [pre-specified output path](htt
 format | time | frame_id | x | y | z | ag_id | data_label, where `ag_id` is the helmet number and `data_label` is the role of the participant.
 
 
+### [New Feature] 💥 Synchronization of micro-action labels 💥
+
+
+```
+python -m thor_magni_tools.run_merge_activities --activities_path ../datasets/thor_magni_pub_ready/QTM_frames_activities.csv --files_dir outputs/data/thor_magni/Scenario_3/ --out_path outputs/data/activities/
+```
+
+Arguments:
+| Parameter                 | Description   |	
+| :------------------------ | :-------------|
+| `--activities_path` 	          |Raw file with synchronization information from Zenodo |
+| `--files_dir` 	    |Preprocessed files or directory of files from `run_preprocessing` |
+| `--out_path` 	              | Directory to save the merged files|
+
+
+
 ### Analysis
 
 ```
