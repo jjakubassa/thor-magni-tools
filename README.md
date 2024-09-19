@@ -69,8 +69,8 @@ python -m thor_magni_tools.run_merge_activities --activities_path ../datasets/th
 Arguments:
 | Parameter                 | Description   |	
 | :------------------------ | :-------------|
-| `--activities_path` 	          |Raw file with synchronization information from Zenodo |
-| `--files_dir` 	    |Preprocessed files or directory of files from `run_preprocessing` |
+| `--activities_path` 	          |Raw activities file with synchronization information from Zenodo |
+| `--files_dir` 	    |Preprocessed files or directory with preprocessed files from `run_preprocessing` |
 | `--out_path` 	              | Directory to save the merged files|
 
 
