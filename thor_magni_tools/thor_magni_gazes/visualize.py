@@ -64,7 +64,7 @@ tobii_data = Loader.filter_tobii_data(trajectories_df)
 
 thor_magni_raw_path = os.path.join(*args.raw_file.split("/")[:-3])
 
-goals_path = os.path.join(thor_magni_raw_path, "goals_positions.csv")
+goals_path = os.path.join(thor_magni_raw_path, "/home/jakubassa/imitation-learning-socially-integrated-navigation/THOR_MAGNI/goals_positions.csv")
 goals_df = pd.read_csv(goals_path)
 
 file_info = args.raw_file.split("/")[-1].split("THOR-Magni_")[1]
