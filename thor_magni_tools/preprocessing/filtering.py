@@ -174,7 +174,7 @@ class Filterer6DOF:
             f"{prefix}_{key}": (
                 input_df[f"{agent_id} {prefix}_{key}"]
                 if f"{agent_id} {prefix}_{key}" in input_df.columns
-                else np.NaN
+                else np.nan
             )
             for key in keys
         }
@@ -219,14 +219,14 @@ class Filterer6DOF:
                     )
                 )
                 df_dict[f"{et}_scene_id"] = (
-                    input_df[scene_key] if scene_key in input_df.columns else np.NaN
+                    input_df[scene_key] if scene_key in input_df.columns else np.nan
                 )
                 if et != "PPL":
                     movement_key = f"{agent_id} {et}_Movement"
                     df_dict[f"{et}_movement"] = (
                         input_df[movement_key]
                         if movement_key in input_df.columns
-                        else np.NaN
+                        else np.nan
                     )
                     df_dict.update(
                         Filterer6DOF.extract_columns(
